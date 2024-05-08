@@ -39,6 +39,18 @@
     .contact-info p:last-child {
       margin-bottom: 0;
     }
+    .gmail:hover .fab {
+      color: #D44638;
+      transform: scale(1.2);
+    }
+    .fab {
+      transition: transform 0.3s ease;
+    }
+    .gmail-link {
+      cursor: pointer;
+      color: #D44638;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -47,10 +59,10 @@
   
     <div class="contact-info">
       <p><strong>Name:</strong> Prasanna Tiwari</p>
-      <p><strong>Email:</strong> prasannatiwari2012@gmail.com</p>
+      <p><strong>Email:</strong> <span class="gmail-link" onclick="location.href='mailto:prasannatiwari2012@gmail.com';">prasannatiwari2012@gmail.com</span> <i class="fas fa-envelope"></i></p>
       <p><strong>Phone:</strong> +1 5678015968</p>
-      <p><strong>Address:</strong> 2312 calendar ct, Grand prairie,</p>
-      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/prasannatiwari01/" class="linkedin">My LinkedIn Profile <i class="fab fa-linkedin"></i></a></p>
+      <p><strong>Address:</strong> 2312 calendar ct, Grand prairie, Texas </p>
+      <p class="linkedin"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/prasannatiwari01/" class="linkedin">My LinkedIn Profile <i class="fab fa-linkedin"></i></a></p>
     </div>
     
     <p>© Prasanna Tiwari. All rights reserved.</p>
