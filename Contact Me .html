@@ -4,26 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Me</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    p {
+      margin-top: 20px;
+      line-height: 1.6;
+      color: #333;
+    }
+    .contact-info {
+      padding-left: 20px;
+    }
+    .contact-info p {
+      margin-bottom: 10px;
+    }
+    .contact-info p:last-child {
+      margin-bottom: 0;
+    }
+  </style>
 </head>
 <body>
-  <h1>Contact Me</h1>
+  <div class="container">
+    <h1>Contact Me</h1>
   
-  <form action="submit_contact_form.php" method="post">
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
+    <div class="contact-info">
+      <p><strong>Name:</strong> Prasanna Tiwari</p>
+      <p><strong>Email:</strong> prasannatiwari2012@gmail.com</p>
+      <p><strong>Phone:</strong> +1 5678015968</p>
+      <p><strong>Address:</strong> 2312 calendar ct, Grand prairie,</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/prasannatiwari01/" class="linkedin">My LinkedIn Profile <i class="fab fa-linkedin"></i></a></p>
+    </div>
     
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
-    
-    <label for="subject">Subject:</label><br>
-    <input type="text" id="subject" name="subject"><br><br>
-    
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="4" required></textarea><br><br>
-    
-    <input type="submit" value="Submit">
-  </form>
-  
-  <p>© Prasanna Tiwari. All rights reserved.</p>
+    <p>© Prasanna Tiwari. All rights reserved.</p>
+  </div>
 </body>
 </html>
